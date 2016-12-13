@@ -1,5 +1,7 @@
+package DataStructuresFromScratch;
+
 import java.util.Arrays;
- 
+
 public class MyArrayList {
  
     private Object[] my_array;
