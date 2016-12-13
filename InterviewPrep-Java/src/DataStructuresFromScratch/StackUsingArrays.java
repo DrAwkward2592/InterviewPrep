@@ -37,6 +37,11 @@ public class StackUsingArrays<T> {
     public T peek(){
     	return array[top-1];
     }
+    
+    public boolean isEmpty(){
+    	if (top==0) return true;
+    	return false;
+    }
 
     @Override
     public String toString()

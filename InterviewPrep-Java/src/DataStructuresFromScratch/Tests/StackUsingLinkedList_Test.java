@@ -29,5 +29,18 @@ public class StackUsingLinkedList_Test {
 		stack.push(1).push(2).push(3);
 		assertEquals("3", stack.peek().toString());
 	}
+	
+	@Test
+	public void test3() {
+		StackUsingArrays<Integer> stack = new StackUsingArrays<>();
+		stack.push(1).push(2).push(3);
+		assertEquals(false, stack.isEmpty());
+	}
+	
+	@Test
+	public void test4() {
+		StackUsingArrays<Integer> stack = new StackUsingArrays<>();
+		assertEquals(true, stack.isEmpty());
+	}
 
 }

@@ -31,6 +31,11 @@ public class StackUsingLinkedList<T> {
         top--;
         return ele;
     }
+    
+    public boolean isEmpty(){
+    	if (top==0) return true;
+    	return false;
+    }
 
     @Override
     public String toString()
