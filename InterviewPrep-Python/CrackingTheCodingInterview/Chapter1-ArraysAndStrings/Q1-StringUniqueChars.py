@@ -5,7 +5,6 @@ Created on Dec 13, 2016
 '''
 import unittest
 
-
 def unique(string):
     # Assuming character set is ASCII (128 characters)
     if len(string) > 128:
