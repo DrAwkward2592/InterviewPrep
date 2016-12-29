@@ -3,6 +3,7 @@ Created on Dec 29, 2016
 
 @author: drawkward
 '''
+import unittest
 def StringCompression(input):
     
     count = 0
@@ -17,6 +18,16 @@ def StringCompression(input):
         return input
     else:
         return output
+    
+class Testcase(unittest.TestCase):
+    data = [("aabbccc", "a2b2c3"),
+            ("aabbcc", "aabbcc")
+            ]
+    
+    def test_function(self):
+        for [input, output] in self.data:
+            actual = StringCompression(input)
+            self.assertEqual(output, actual)
 if __name__ == '__main__':
-    print(StringCompression("aabbccc"))
+    unittest.main()
         
